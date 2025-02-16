@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.effect.DropShadow?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+            minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0"
+            xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="ru.itis.client.controller.RoomEntryController"
+            stylesheets="@../../../styles/styles.css">
+
+   <center>
+      <VBox alignment="CENTER" spacing="30" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <!-- Текст с названием комнаты с классом "text-title" из styles.css -->
+            <Text fx:id="roomNameText" text="Room Name" styleClass="text-title">
+               <effect>
+                  <DropShadow color="rgba(0, 0, 0, 0.5)" radius="10" offsetX="3" offsetY="3" />
+               </effect>
+            </Text>
+
+            <!-- Кнопка "Ready" с классом "button" из styles.css -->
+            <Button fx:id="readyButton" mnemonicParsing="false" text="Ready" styleClass="button">
+               <effect>
+                  <DropShadow color="rgba(0, 0, 0, 0.3)" radius="8" offsetX="3" offsetY="3" />
+               </effect>
+            </Button>
+
+            <!-- Кнопка "Выход" с классом "button" из styles.css -->
+            <Button fx:id="exitButton" mnemonicParsing="false" text="Exit" styleClass="button">
+               <effect>
+                  <DropShadow color="rgba(0, 0, 0, 0.3)" radius="8" offsetX="3" offsetY="3" />
+               </effect>
+            </Button>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>
